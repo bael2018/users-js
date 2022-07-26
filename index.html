@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <title>Contacts Books</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="users-left">
+                <div class="users-sort">
+                    <span>Sort by alphabet: </span>
+                    <div class="users-sort__wrapper">
+                        <h4>default</h4>
+                        <div>
+                            <p class="users-default">default</p>
+                            <p class="users-abc">abc</p>
+                            <p class="users-cba">cba</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="users-group">
+                    <span>Group by username: </span>
+                    <input placeholder="letter" maxlength="1" type="text">
+                </div>
+            </div>
+
+            <div class="users-search">
+                <div class="users-search__wrapper">
+                    <input class="users-search__input" type="text" placeholder="Search">
+                    <div class="users-search__result invisible"></div>
+                </div>
+            </div>
+        </header>
+    
+        <main>
+            <section class="users-list"></section>
+            <section class="user-info user-info_active"></section>
+        </main>
+    </div>
+
+    <div class="user-modal">
+        <div class="user-modal__wrapper">
+            <button class="user-modal__closer">&times;</button>
+            <form>
+                <h3>Edit user</h3>
+                <label>
+                    <input required id="name" type="text" name="name">
+                    <span>Name</span>
+                </label>
+                <label>
+                    <input required id="username" type="text" name="username">
+                    <span>Username</span>
+                </label>    
+                <label>
+                    <input required id="email" type="text" name="email">
+                    <span>Email</span>
+                </label>
+                <label>
+                    <input required id="phone" type="text" name="phone">
+                    <span>Phone</span>
+                </label>
+                <label>
+                    <input required id="website" type="text" name="website">
+                    <span>Website</span>
+                </label>
+                <div>
+                    <button>SUBMIT</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script defer src="/src/js/script.js"></script>
+    <script defer src="/src/js/modal.js"></script>
+</body>
+</html>
